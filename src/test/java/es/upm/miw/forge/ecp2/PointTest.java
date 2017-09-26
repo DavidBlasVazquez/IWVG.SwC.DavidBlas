@@ -8,11 +8,15 @@ import org.junit.Test;
 import es.upm.miw.forge.ecp2.Point;
 
 public class PointTest {
-    private Point pt;
+    private Point pt, primer, segundo, tercero, cuarto;
 
     @Before
     public void before() {
         pt = new Point(2, 3);
+        primer = new Point(2, 3);
+        segundo = new Point(-2, +3);
+        tercero = new Point(-2, -3);
+        cuarto = new Point(2, -3);
     }
 
     @Test
@@ -49,5 +53,16 @@ public class PointTest {
     public void testToString() {
         assertEquals("Point[2,3]", pt.toString());
     }
+    
+    /*
+    @Test
+    public void testQuadrant() {
+        assertEquals(1, primer.quadrant());
+        assertEquals(2, segundo.quadrant());
+        assertEquals(3, tercero.quadrant());
+        assertEquals(4, cuarto.quadrant());
+    }
+    */
+    
 
 }

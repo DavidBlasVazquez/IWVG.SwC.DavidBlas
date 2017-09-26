@@ -54,5 +54,19 @@ public class DecimalCollectionTest {
 		exception.expect(ArithmeticException.class);
 		new DecimalCollection().higher();
 	}
-
+	/*  
+	@Test
+	public void testLower() {
+		assertEquals(-1.0, decimalCollection.lower());
+	}
+	
+	@Test
+	public void testGetFirst() {
+		assertEquals(2.0, decimalCollection.getFirst());
+	}
+    @Test
+	public void testIsEmpty() {
+		assertEquals(true, decimalCollection.isEmpty());
+	}
+	*/
 }
