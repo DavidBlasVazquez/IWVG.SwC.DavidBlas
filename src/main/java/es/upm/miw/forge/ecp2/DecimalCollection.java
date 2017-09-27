@@ -18,6 +18,10 @@ public class DecimalCollection {
     public int size() {
         return this.collection.size();
     }
+    
+    public boolean isEmpty() {
+    	return this.collection.isEmpty();
+    }
 
     public double sum() {
         assert collection != null;
