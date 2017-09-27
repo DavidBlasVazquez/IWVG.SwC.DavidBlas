@@ -53,8 +53,7 @@ public class PointTest {
     public void testToString() {
         assertEquals("Point[2,3]", pt.toString());
     }
-    
-    /*
+   
     @Test
     public void testQuadrant() {
         assertEquals(1, primer.quadrant());
@@ -62,7 +61,6 @@ public class PointTest {
         assertEquals(3, tercero.quadrant());
         assertEquals(4, cuarto.quadrant());
     }
-    */
     
 
 }
