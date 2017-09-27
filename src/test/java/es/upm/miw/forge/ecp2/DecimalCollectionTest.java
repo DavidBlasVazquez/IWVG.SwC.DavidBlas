@@ -64,11 +64,13 @@ public class DecimalCollectionTest {
 	public void testLower() {
 		assertEquals(-1.0, decimalCollection.lower(),10e-5);
 	}
-	/*
+	
 	@Test
 	public void testGetFirst() {
-		assertEquals(2.0, decimalCollection.getFirst());
+		assertEquals(2.0, decimalCollection.getFirst(),10e-5);
 	}
+	
+	/*
     @Test
 	public void testIsEmpty() {
 		assertEquals(true, decimalCollection.isEmpty());
