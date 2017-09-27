@@ -29,11 +29,11 @@ public class FractionTest {
         assertEquals(2,fraction.decimal(),2);
     }
     
-	/*
-	 * @test
-	public void TestisProperFraction () {
-	    assertEquals(true, fraction.getNumerator() < fraction.getDenominator());
+    @Test
+	public void testIsProperFraction () {
+    	Fraction f = new Fraction (2,7);
+	    assertEquals(true, f.isProperFraction());
 	}
-	*/
+	
 
 }
