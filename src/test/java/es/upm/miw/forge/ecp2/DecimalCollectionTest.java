@@ -34,6 +34,11 @@ public class DecimalCollectionTest {
 	}
 
 	@Test
+	public void testIsEmpty() {
+		assert(!this.decimalCollection.isEmpty());
+	}
+	
+	@Test
 	public void testSum() {
 		assertEquals(6.0, this.decimalCollection.sum(), 10e-5);
 	}
