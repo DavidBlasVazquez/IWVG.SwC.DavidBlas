@@ -62,5 +62,13 @@ public class DecimalCollection {
           }
           return result;	
     }
+    
+    public double getFirst() {
+    	assert this.collection != null;
+    	if (this.collection.isEmpty()) {
+            throw new ArithmeticException("Empty collection");
+        }
+    	return this.collection.get(0);
+    }
 
 }
