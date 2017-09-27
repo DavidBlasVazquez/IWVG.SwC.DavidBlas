@@ -16,10 +16,29 @@ public class UserTest {
 		this.user = new User(1, "Jose", "Sanchez");
 	}
 
+    @Test
+    public void testGetNumber() {
+        assertEquals(1,user.getNumber());
+    }
+
+    @Test
+    public void testGetName() {
+        assertEquals("Jose",user.getName());
+    }
+
+    @Test
+    public void testGetFamilyName() {
+        assertEquals("Sanchez",user.getFamilyName());
+    }
+
+    @Test
+    public void testFullName() {
+        assertEquals("Jose Sanchez",user.fullName());
+    }
+    
 	@Test
 	public void fullInitials () {
 	    assertEquals("J.S.", user.fullInitials());
-	}
-
+	}	
 
 }
