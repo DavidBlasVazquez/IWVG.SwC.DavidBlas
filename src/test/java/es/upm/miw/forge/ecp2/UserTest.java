@@ -1,7 +1,11 @@
 package es.upm.miw.forge.ecp2;
 
-import org.junit.Before;
+import static org.junit.Assert.assertEquals;
 
+import org.junit.Before;
+import org.junit.Test;
+
+import es.upm.miw.forge.ecp2.User;
 
 public class UserTest {
 	
@@ -11,13 +15,11 @@ public class UserTest {
 	public void before() {
 		this.user = new User(1, "Jose", "Sanchez");
 	}
-	
-	/* 
-	@test
+
+	@Test
 	public void fullInitials () {
 	    assertEquals("J.S.", user.fullInitials());
 	}
-	*/
 
 
 }
