@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DecimalCollection {
+	static public String MESSAGE_EMPTY = "Empty collection";
 
     private List<Double> collection;
 
@@ -26,7 +27,7 @@ public class DecimalCollection {
     public double sum() {
         assert collection != null;
         if (this.collection.isEmpty()) {
-            throw new ArithmeticException("Empty collection");
+            throw new ArithmeticException(MESSAGE_EMPTY);
         }
         double sum = 0;
         for (double item : this.collection) {
@@ -38,7 +39,7 @@ public class DecimalCollection {
     public double higher() {
         assert collection != null;
         if (this.collection.isEmpty()) {
-            throw new ArithmeticException("Empty collection");
+            throw new ArithmeticException(MESSAGE_EMPTY);
         }
         double higher = Double.NEGATIVE_INFINITY;
         for (double item : this.collection) {
@@ -52,7 +53,7 @@ public class DecimalCollection {
     public double lower() {
     	  assert collection != null;
           if (this.collection.isEmpty()) {
-              throw new ArithmeticException("Empty collection");
+              throw new ArithmeticException(MESSAGE_EMPTY);
           }
           double result = Double.POSITIVE_INFINITY;
           for (double item : this.collection) {
@@ -66,7 +67,7 @@ public class DecimalCollection {
     public double getFirst() {
     	assert this.collection != null;
     	if (this.collection.isEmpty()) {
-            throw new ArithmeticException("Empty collection");
+            throw new ArithmeticException(MESSAGE_EMPTY);
         }
     	return this.collection.get(0);
     }
