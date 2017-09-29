@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DecimalCollection {
-	static public String MESSAGE_EMPTY = "Empty collection";
+	static final String MESSAGE_EMPTY = "Empty collection";
 
     private List<Double> collection;
 
